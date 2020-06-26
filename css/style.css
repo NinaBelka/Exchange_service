@@ -140,7 +140,7 @@ h4 {
   background: url(../img/service_bg.png) center no-repeat;
   background-size: cover;
   margin-bottom: 85px;
-  padding-bottom: 140px;
+  padding: 100px 0 140px;
 }
 
 .title {
