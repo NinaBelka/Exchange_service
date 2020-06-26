@@ -94,7 +94,7 @@ h4 {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .header-container {
@@ -139,8 +139,8 @@ h4 {
 .service {
   background: url(../img/service_bg.png) center no-repeat;
   background-size: cover;
-  padding: 113px 0 84px;
   margin-bottom: 85px;
+  padding-bottom: 140px;
 }
 
 .title {
@@ -167,7 +167,7 @@ h4 {
   border: 4px solid rgba(247, 248, 253, 0.2);
   margin-top: 53px;
   box-shadow: 0px 50px 1px -30px rgba(255, 255, 255, 0.2), 0px 90px 1px -50px rgba(255, 255, 255, 0.2);
-  padding: 78px 85px 78px 107px;
+  padding: 78px 85px 70px 90px;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -226,6 +226,10 @@ h4 {
 .service-icon {
   display: inline-block;
   margin: 0 20px;
+}
+
+.service-button {
+  margin-top: 50px;
 }
 
 .currency-btn {
@@ -334,6 +338,10 @@ h4 {
   right: 0;
 }
 
+.history-block-left {
+  padding-left: 40px;
+}
+
 .history-title {
   font-style: normal;
   font-weight: 500;
@@ -375,6 +383,7 @@ h4 {
 
 .reserve-container {
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .reserve-block {
@@ -878,9 +887,11 @@ h4 {
   .reserve-number {
     font-size: 14px;
   }
-.exchange-container {
-  margin-bottom: 0;
-}
+
+  .exchange-container {
+    margin-bottom: 0;
+  }
+
   .exchange-image {
     display: none;
   }
