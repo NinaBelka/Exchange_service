@@ -5,8 +5,8 @@ $(document).ready(function () {
     slidesPerView: 2,
     spaceBetween: 25,
     navigation: {
-      nextEl: '.arrow-right',
-      prevEl: '.arrow-left',
+      nextEl: '.button-right',
+      prevEl: '.button-left',
     },
     breakpoints: {
       768: {

@@ -541,20 +541,19 @@ h4 {
   color: #838BA8;
 }
 
-.customers-arrows {
+.customers-btn {
   display: flex;
   justify-content: flex-end;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
-.arrow-left {
+.btn {
+  cursor: pointer;
+  background: none;
+}
+
+.button-left {
   margin-right: 23px;
-  cursor: pointer;
-}
-
-.arrow-right {
-  padding: 10px;
-  cursor: pointer;
 }
 
 /* Footer */
