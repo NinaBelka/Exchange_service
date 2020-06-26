@@ -50,6 +50,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -94,7 +98,6 @@ h4 {
 }
 
 .header-container {
-  height: 90px;
   padding: 15px 0;
 }
 
@@ -160,10 +163,16 @@ h4 {
 }
 
 .service-container {
-  background: url(../img/service-block_bg.png) center no-repeat;
-  background-size: cover;
+  background: rgba(255, 255, 255, 0.8);
+  border: 4px solid rgba(247, 248, 253, 0.2);
   margin-top: 53px;
-  padding: 78px 85px 130px 85px;
+  box-shadow: 0px 50px 1px -30px rgba(255, 255, 255, 0.2), 0px 90px 1px -50px rgba(255, 255, 255, 0.2);
+  padding: 78px 85px 78px 107px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 
 .block-title {
@@ -428,14 +437,22 @@ h4 {
 }
 
 .exchange-container {
-  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
   background: url(../img/exchange_bg.png) center no-repeat;
-  background-size: center;
-  margin: auto;
+  background-size: cover;
+  margin-bottom: 100px;
+}
+
+.exchange-image {
+  width: 80%;
+  height: 80%;
+  margin: -20px 0 0 50px;
 }
 
 .exchange-block {
-  padding: 90px 0 130px 600px;
+  width: 50%;
 }
 
 .exchange-title {
@@ -443,8 +460,7 @@ h4 {
   font-weight: 500;
   line-height: 132.4%;
   color: #FFFFFF;
-  margin-bottom: 20px;
-  padding-right: 137px;
+  margin: 50px 0;
 }
 
 .exchange-subtitle {
@@ -454,7 +470,7 @@ h4 {
   line-height: 166.5%;
   color: #FFFFFF;
   opacity: 0.7;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .exchange-btn {
@@ -465,14 +481,13 @@ h4 {
   text-align: center;
   color: #9F7DFD;
   padding: 25px 50px;
-  background: #FFFFFF;
-  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 10.2611px;
+  margin-bottom: 50px;
 }
 
 /* Customers */
 .customers-container {
-  flex-wrap: wrap;
   margin-bottom: 100px;
 }
 
@@ -485,15 +500,12 @@ h4 {
   margin-bottom: 100px;
 }
 
-.customers-blocks {
+.customer-blocks {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 45px;
 }
 
 .customer-block {
   position: relative;
-  width: 45%;
 }
 
 .customer-text {
@@ -508,7 +520,7 @@ h4 {
 
 .customer-image {
   position: absolute;
-  left: -30%;
+  left: -20%;
   top: -50%;
 }
 
@@ -530,11 +542,19 @@ h4 {
 }
 
 .customers-arrows {
-  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
 }
 
 .arrow-left {
   margin-right: 23px;
+  cursor: pointer;
+}
+
+.arrow-right {
+  padding: 10px;
+  cursor: pointer;
 }
 
 /* Footer */
@@ -572,6 +592,7 @@ h4 {
 }
 
 .footer-text {
+  width: 100%;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -632,13 +653,16 @@ h4 {
     width: 50%;
   }
 
-  .exchange-block {
-    padding-left: 300px;
+  .exchange-image {
+    width: 80%;
+    height: 80%;
+    margin: -40px 0 0 30px;
   }
 
   .exchange-title {
-    padding-left: 0;
+    margin-bottom: 20px;
   }
+
 
   .footer-nav-link {
     margin-right: 10px;
@@ -766,9 +790,6 @@ h4 {
     margin-bottom: 70px;
   }
 
-  .exchange-block {
-    padding: 50px 0 100px 100px;
-  }
 }
 
 @media (max-width: 560px) {
@@ -825,37 +846,56 @@ h4 {
   .history-text {
     font-size: 12px;
   }
+
   .points-down {
     display: none;
   }
+
   .points-up {
     display: none;
   }
+
   .history-image {
     max-width: 300px;
   }
+
   .reserve {
     margin-bottom: 50px;
   }
+
   .reserve-block {
     width: 90%;
     margin: 20px auto;
   }
+
   .reserve-title {
     margin-bottom: 40px;
   }
+
   .reserve-text {
     font-size: 14px;
   }
+
   .reserve-number {
     font-size: 14px;
   }
-  .exchange-block {
-    padding: 40px 20px;
+.exchange-container {
+  margin-bottom: 0;
+}
+  .exchange-image {
+    display: none;
   }
+
+  .exchange-block {
+    width: 95%;
+    margin: auto;
+    padding-left: 0;
+  }
+
   .exchange-title {
     padding-right: 0;
   }
+
   .exchange-btn {
     padding: 15px 30px;
   }
@@ -863,10 +903,16 @@ h4 {
   .customers-title {
     margin: 50px 0;
   }
+
   .customer-image {
     display: none;
   }
+
   .social-icons {
     margin-top: 20px;
+  }
+
+  .footer-container {
+    margin-bottom: 20px;
   }
 }
